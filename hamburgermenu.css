@@ -1,0 +1,166 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 200vh;
+}
+
+.hamburger {
+    padding: 7px 0px;
+    height: 100%;
+    display: none;
+    float: left;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.line {
+    width: 30px;
+    height: 5px;
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: transform 0.5s;
+}
+
+.logo {
+    float: right;
+    line-height: 50px;
+    color: rgb(229, 255, 0);
+}
+
+.menu {
+    background-color: #000000;
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.menu .right-side {
+    border: 1px solid black;
+    display: inline-block;
+    float: right;
+    width: 85%;
+}
+
+.menu .left-side {
+    width: 14%;
+    display: inline-block;
+    float: left;
+    height: 50px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: #000000;
+    display: inline-block;
+    width: 135px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    background-color: black;
+    color: rgb(88, 85, 85);
+}
+
+.menu a {
+    color: white;
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 50;
+    left: 0;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.content {
+    height: 90vh;
+    background-color: rgb(164, 184, 182);
+}
+
+.slide-menu {
+    background-color: #1C2833;
+    top: 50;
+    height: 90vh;
+    width: 45%;
+    position: absolute;
+    left: -45%;
+    transition: 0.5s ease-in-out;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.slide-menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.slide-menu ul li {}
+
+.slide-menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 15px;
+}
+
+.slide-menu ul li ul {
+    display: none;
+}
+
+.slide-menu ul li a:hover {
+    box-shadow: rgba(238, 255, 0, 0.7) 0px 2px 11px;
+}
+
+@media (max-width:992px) {
+    .right-side ul li a {
+        width: 95px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:768px) {
+    .hamburger {
+        display: inline-block;
+    }
+    .right-side {
+        display: none!important;
+        width: 70%;
+    }
+    .left-side {
+        width: 25%!important;
+    }
+}
+
+.icon-style {
+    display: inline-block;
+}
+
+ion-icon {
+    float: right;
+    transition: 0.6s;
+}
